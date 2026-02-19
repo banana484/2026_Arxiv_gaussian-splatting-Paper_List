@@ -79,17 +79,18 @@ def update_readme(table_md):
     before, rest = text.split(start_tag, 1)
     _, after = rest.split(end_tag, 1)
 
-    new_block = (
+     new_block = (
         start_tag
         + "\n\n"
         + table_md
+        + "\n\n"
+        + abstracts_md
         + "\n\n_Last updated: "
         + dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).strftime(
             "%Y-%m-%d %H:%M (KST)"
         )
         + "_\n"
-        + end_tag
-    )
+        + end_tag)
 
     new_text = before + new_block + after
     README_PATH.write_text(new_text, encoding="utf-8")
