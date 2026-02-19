@@ -25,7 +25,11 @@ jobs:
 
       - name: Run script
         run: |
+          cd "$GITHUB_WORKSPACE"
+          pwd
+          ls
           python scripts/fetch_arxiv.py
+
 
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
