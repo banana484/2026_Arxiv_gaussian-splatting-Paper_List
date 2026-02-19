@@ -63,15 +63,20 @@ def make_markdown_table(entries):
         return f"_No papers found yet for {YEAR}._"
 
     lines = []
-    # Id 컬럼 추가
-    lines.append("| Id | Date | Title | Authors |")
-    lines.append("|----|------|-------|---------|")
+    # Id + Abstract 컬럼까지 포함
+    lines.append("| Id | Date | Title | Authors | Abstract |")
+    lines.append("|----|------|-------|---------|----------|")
     for idx, e in enumerate(entries, start=1):
         title_md = f"[{e['title']}]({e['url']})"
         title_md = "<br>".join(textwrap.wrap(title_md, width=80))
         authors_md = e["authors"].replace("\n", " ")
-        lines.append(f"| {idx} | {e['date']} | {title_md} | {authors_md} |")
+        # abstract는 너무 길어서 한두 줄로만 줄이거나, 앞부분만 자르기
+        abstract_short = " ".join(e["abstract"].split()[:40]) + " ..."
+        lines.append(
+            f"| {idx} | {e['date']} | {title_md} | {authors_md} | {abstract_short} |"
+        )
     return "\n".join(lines)
+
 
 
 
