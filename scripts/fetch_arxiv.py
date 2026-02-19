@@ -75,7 +75,9 @@ def make_markdown_table(entries):
         title_md = f"[{e['title']}]({e['url']})"
         title_md = "<br>".join(textwrap.wrap(title_md, width=80))
         authors_md = e["authors"].replace("\n", " ")
-        abstract_short = " ".join(e["abstract"].split()[:40]) + " ..."
+      # Abstract 열: 아래 섹션의 앵커로 연결
+        anchor = f"#paper-{paper_id}"
+        abstract_md = f"[view]({anchor})"
         lines.append(
             f"| {paper_id} | {e['date']} | {title_md} | {authors_md} | {abstract_short} |"
         )
@@ -97,15 +99,18 @@ def update_readme(table_md, entries):
     before, rest = text.split(start_tag, 1)
     _, after = rest.split(end_tag, 1)
 
-    # abstract 섹션 생성
+        # abstract 섹션 생성
     abs_lines = []
     abs_lines.append("## Abstracts\n")
     for idx, e in enumerate(entries, start=1):
-        abs_lines.append(f"### {idx}. {e['title']}")
+        anchor = f"paper-{idx}"
+        # h3에 id 달아서 점프 위치 생성
+        abs_lines.append(f'<h3 id="{anchor}">{idx}. {e["title"]}</h3>')
         abs_lines.append("")
         abs_lines.append(e["abstract"])
         abs_lines.append("")
     abstracts_md = "\n".join(abs_lines)
+
 
     new_block = (
         start_tag
