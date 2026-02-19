@@ -45,7 +45,7 @@ def fetch_entries():
         ymd = published.strftime("%Y-%m-%d")
 
         entries.append(
-            {"title": title, "url": url, "authors": authors, "date": ymd}
+            {"title": title, "url": url, "authors": authors, "date": ymd,"abstract": abstract,}
         )
 
     entries.sort(key=lambda x: x["date"], reverse=True)
