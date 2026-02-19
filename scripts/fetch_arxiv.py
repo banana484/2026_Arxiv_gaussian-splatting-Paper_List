@@ -54,7 +54,7 @@ def fetch_entries():
             }
         )
 
-    entries.sort(key=lambda x: x["date"],reverse=True))
+    entries.sort(key=lambda x: x["date"],reverse=True)
     return entries
 
 
