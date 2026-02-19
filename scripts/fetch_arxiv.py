@@ -69,7 +69,7 @@ def make_markdown_table(entries):
 
 
 
-def update_readme(table_md):
+def update_readme(table_md, entries):
     text = README_PATH.read_text(encoding="utf-8")
 
     start_tag = "<!-- PAPERS-START -->"
@@ -81,7 +81,17 @@ def update_readme(table_md):
     before, rest = text.split(start_tag, 1)
     _, after = rest.split(end_tag, 1)
 
-     new_block = (
+    # abstract 섹션 생성
+    abs_lines = []
+    abs_lines.append("## Abstracts\n")
+    for idx, e in enumerate(entries, start=1):
+        abs_lines.append(f"### {idx}. {e['title']}")
+        abs_lines.append("")
+        abs_lines.append(e["abstract"])
+        abs_lines.append("")
+    abstracts_md = "\n".join(abs_lines)
+
+    new_block = (
         start_tag
         + "\n\n"
         + table_md
@@ -92,7 +102,8 @@ def update_readme(table_md):
             "%Y-%m-%d %H:%M (KST)"
         )
         + "_\n"
-        + end_tag)
+        + end_tag
+    )
 
     new_text = before + new_block + after
     README_PATH.write_text(new_text, encoding="utf-8")
@@ -105,7 +116,8 @@ def main():
 
     entries = fetch_entries()
     table_md = make_markdown_table(entries)
-      update_readme(table_md, entries)
+    update_readme(table_md, entries)
+
 
 
 if __name__ == "__main__":
