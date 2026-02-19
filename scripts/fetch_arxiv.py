@@ -103,7 +103,7 @@ def main():
 
     entries = fetch_entries()
     table_md = make_markdown_table(entries)
-    update_readme(table_md)
+      update_readme(table_md, entries)
 
 
 if __name__ == "__main__":
