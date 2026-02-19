@@ -43,6 +43,7 @@ def fetch_entries():
         url = e.link
         authors = ", ".join(a.name for a in e.authors)
         ymd = published.strftime("%Y-%m-%d")
+        abstract = " ".join(e.summary.split())
 
         entries.append(
             {"title": title, "url": url, "authors": authors, "date": ymd,"abstract": abstract,}
