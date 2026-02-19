@@ -56,13 +56,13 @@ def make_markdown_table(entries):
         return f"_No papers found yet for {YEAR}._"
 
     lines = []
-    lines.append("| Date | Title | Authors |")
-    lines.append("|------|-------|---------|")
-    for e in entries:
+   lines.append("| Id | Date | Title | Authors |")
+    lines.append("|----|------|-------|---------|")
+    for idx, e in enumerate(entries, start=1):
         title_md = f"[{e['title']}]({e['url']})"
         title_md = "<br>".join(textwrap.wrap(title_md, width=80))
         authors_md = e["authors"].replace("\n", " ")
-        lines.append(f"| {e['date']} | {title_md} | {authors_md} |")
+        lines.append(f"| {idx} | {e['date']} | {title_md} | {authors_md} |")
     return "\n".join(lines)
 
 
