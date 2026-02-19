@@ -79,7 +79,7 @@ def make_markdown_table(entries):
         anchor = f"#paper-{paper_id}"
         abstract_md = f"[view]({anchor})"
         lines.append(
-            f"| {paper_id} | {e['date']} | {title_md} | {authors_md} | {abstract_short} |"
+            f"| {paper_id} | {e['date']} | {title_md} | {authors_md} | {abstract_md} |"
         )
     return "\n".join(lines)
 
