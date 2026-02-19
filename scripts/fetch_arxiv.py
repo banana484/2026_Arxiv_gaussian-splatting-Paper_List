@@ -27,6 +27,7 @@ def fetch_entries():
         "max_results": MAX_RESULTS,
         "sortBy": "submittedDate",
         "sortOrder": "descending",
+        "abstract": abstract,
     }
     resp = requests.get(ARXIV_API_URL, params=params, timeout=20)
     resp.raise_for_status()
