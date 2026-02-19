@@ -11,7 +11,11 @@ MAX_RESULTS = 100
 
 QUERY = 'all:"gaussian splatting"'
 ARXIV_API_URL = "http://export.arxiv.org/api/query"
-README_PATH = Path("README.md")
+
+# GitHub Actions의 리포 루트 절대 경로를 직접 지정
+README_PATH = Path(
+    "/home/runner/work/2026_Arxiv_gaussian-splatting-Paper_List/2026_Arxiv_gaussian-splatting-Paper_List/README.md"
+)
 # ------------------------
 
 
