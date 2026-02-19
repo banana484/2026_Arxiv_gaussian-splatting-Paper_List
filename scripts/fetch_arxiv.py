@@ -90,6 +90,10 @@ def update_readme(table_md):
 
 
 def main():
+    import os
+    print("CWD:", os.getcwd())
+    print("README_PATH:", README_PATH)
+
     entries = fetch_entries()
     table_md = make_markdown_table(entries)
     update_readme(table_md)
