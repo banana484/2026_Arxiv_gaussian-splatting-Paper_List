@@ -57,7 +57,8 @@ def make_markdown_table(entries):
         return f"_No papers found yet for {YEAR}._"
 
     lines = []
-   lines.append("| Id | Date | Title | Authors |")
+    # Id 컬럼 추가
+    lines.append("| Id | Date | Title | Authors |")
     lines.append("|----|------|-------|---------|")
     for idx, e in enumerate(entries, start=1):
         title_md = f"[{e['title']}]({e['url']})"
@@ -65,6 +66,7 @@ def make_markdown_table(entries):
         authors_md = e["authors"].replace("\n", " ")
         lines.append(f"| {idx} | {e['date']} | {title_md} | {authors_md} |")
     return "\n".join(lines)
+
 
 
 def update_readme(table_md):
