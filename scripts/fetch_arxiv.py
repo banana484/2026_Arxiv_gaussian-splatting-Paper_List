@@ -27,7 +27,6 @@ def fetch_entries():
         "max_results": MAX_RESULTS,
         "sortBy": "submittedDate",
         "sortOrder": "descending",
-        "abstract": abstract,
     }
     resp = requests.get(ARXIV_API_URL, params=params, timeout=20)
     resp.raise_for_status()
@@ -46,7 +45,13 @@ def fetch_entries():
         abstract = " ".join(e.summary.split())
 
         entries.append(
-            {"title": title, "url": url, "authors": authors, "date": ymd,"abstract": abstract,}
+            {
+                "title": title,
+                "url": url,
+                "authors": authors,
+                "date": ymd,
+                "abstract": abstract,
+            }
         )
 
     entries.sort(key=lambda x: x["date"], reverse=True)
