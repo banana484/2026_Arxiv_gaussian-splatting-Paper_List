@@ -9,7 +9,8 @@ TOPIC_NAME = "Gaussian Splatting"
 YEAR = 2026
 MAX_RESULTS = 100
 
-QUERY = 'all:"gaussian splatting"'
+QUERY = 'ti:"gaussian splatting"' ## 검색할 명령어
+
 ARXIV_API_URL = "http://export.arxiv.org/api/query"
 
 # GitHub Actions의 리포 루트 절대 경로를 직접 지정
