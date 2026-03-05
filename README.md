@@ -13,7 +13,7 @@
 |----|------|-------|---------|----------|
 | 100 | 2026-03-03 | [VIRGi: View-dependent Instant Recoloring of 3D Gaussians<br>Splats](https://arxiv.org/abs/2603.02986v1) | Alessio Mazzucchelli, Ivan Ojeda-Martin, Fernando Rivas-Manzaneque, Elena Garces, Adrian Penate-Sanchez, Francesc Moreno-Noguer | [view](#paper-100) |
 | 99 | 2026-03-03 | [Intrinsic Geometry-Appearance Consistency Optimization for Sparse-View Gaussian<br>Splatting](https://arxiv.org/abs/2603.02893v1) | Kaiqiang Xiong, Rui Peng, Jiahao Wu, Zhanke Wang, Jie Liang, Xiaoyun Zheng, Feng Gao, Ronggang Wang | [view](#paper-99) |
-| 98 | 2026-03-03 | [Generalized non-exponential Gaussian<br>splatting](https://arxiv.org/abs/2603.02887v1) | Sébastien Speierer, Adrian Jarabo | [view](#paper-98) |
+| 98 | 2026-03-03 | [Generalized non-exponential Gaussian<br>splatting](https://arxiv.org/abs/2603.02887v2) | Sébastien Speierer, Adrian Jarabo | [view](#paper-98) |
 | 97 | 2026-03-03 | [Multimodal-Prior-Guided Importance Sampling for Hierarchical Gaussian Splatting<br>in Sparse-View Novel View Synthesis](https://arxiv.org/abs/2603.02866v1) | Kaiqiang Xiong, Zhanke Wang, Ronggang Wang | [view](#paper-97) |
 | 96 | 2026-03-03 | [SemGS: Feed-Forward Semantic 3D Gaussian Splatting from Sparse Views for<br>Generalizable Scene Understanding](https://arxiv.org/abs/2603.02548v1) | Sheng Ye, Zhen-Hui Dong, Ruoyu Fan, Tian Lv, Yong-Jin Liu | [view](#paper-96) |
 | 95 | 2026-03-02 | [Sparse View Distractor-Free Gaussian<br>Splatting](https://arxiv.org/abs/2603.01603v1) | Yi Gu, Zhaorui Wang, Jiahang Cao, Jiaxu Wang, Mingle Zhao, Dongjun Ye, Renjing Xu | [view](#paper-95) |
@@ -515,5 +515,5 @@ We present ProFuse, an efficient context-aware framework for open-vocabulary 3D 
 Recent advances in 3D Gaussian Splatting have allowed for real-time, high-fidelity novel view synthesis. Nonetheless, these models have significant storage requirements for large and medium-sized scenes, hindering their deployment over cloud and streaming services. Some of the most recent progressive compression techniques for these models rely on progressive masking and scalar quantization techniques to reduce the bitrate of Gaussian attributes using spatial context models. While effective, scalar quantization may not optimally capture the correlations of high-dimensional feature vectors, which can potentially limit the rate-distortion performance. In this work, we introduce a novel progressive codec for 3D Gaussian Splatting that replaces traditional methods with a more powerful Residual Vector Quantization approach to compress the primitive features. Our key contribution is an auto-regressive entropy model, guided by a multi-resolution hash grid, that accurately predicts the conditional probability of each successive transmitted index, allowing for coarse and refinement layers to be compressed with high efficiency.
 
 
-_Last updated: 2026-03-04 13:42 (KST)_
+_Last updated: 2026-03-05 13:46 (KST)_
 <!-- PAPERS-END -->
