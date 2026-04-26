@@ -515,5 +515,5 @@ The increasing demand for augmented reality and robotics is driving the need for
 Motivation: Quickly obtaining high-quality MRI from accelerated acquisitions is important to mitigate motion artifacts, maintain patient comfort, and improve clinical efficiency. Goals: To obtain high-quality dynamic MRI using efficient, personalized models. Approach: We propose a novel explicit representation learning approach using Gaussian splatting. Multiple Gaussian primitives are trained to represent the underlying tissue. We extend the Gaussian splatting framework to model anatomical motion, enabling learning an efficient, explicit representation of dynamic MRI. Results: Gaussian splats can be trained in 60s with 0.5ms/dynamic inference time. High-quality cardiac MRI is obtained at R=16. We show that the properties of the Gaussians directly encode physiological properties.
 
 
-_Last updated: 2026-04-25 14:13 (KST)_
+_Last updated: 2026-04-26 14:42 (KST)_
 <!-- PAPERS-END -->
