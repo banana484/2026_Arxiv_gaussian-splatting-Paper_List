@@ -11,7 +11,7 @@
 
 | Id | Date | Title | Authors | Abstract |
 |----|------|-------|---------|----------|
-| 100 | 2026-06-10 | [Wild3R: Feed-Forward 3D Gaussian Splatting from Unconstrained Sparse Photo<br>Collection](https://arxiv.org/abs/2606.11894v1) | Yuto Furutani, Takashi Otonari, Kaede Shiohara, Toshihiko Yamasaki | [view](#paper-100) |
+| 100 | 2026-06-10 | [Wild3R: Feed-Forward 3D Gaussian Splatting from Unconstrained Sparse Photo<br>Collection](https://arxiv.org/abs/2606.11894v2) | Yuto Furutani, Takashi Otonari, Kaede Shiohara, Toshihiko Yamasaki | [view](#paper-100) |
 | 99 | 2026-06-10 | [Scene-Adaptive Nonlinear Tone Curves for Pseudo Ground-Truth Generation in Low-<br>Light 3D Gaussian Splatting](https://arxiv.org/abs/2606.11841v1) | Mingzhe Lyu, Jinqiang Cui, Hong Zhang | [view](#paper-99) |
 | 98 | 2026-06-10 | [Seeing What Matters: Perceptual Wrapper with Common Randomness for 3D Gaussian<br>Splatting](https://arxiv.org/abs/2606.11782v1) | He-Bi Yang, Jing-Zhong Chen, Yen-Kuan Ho, Sang NguyenQuang, Fan-Yi Hsu, Yun-Yu Lee, Jui-Chiu Chiang, Wen-Hsiao Peng | [view](#paper-98) |
 | 97 | 2026-06-09 | [A Scalable PyTorch Abstraction for Multi-GPU Gaussian<br>Splatting](https://arxiv.org/abs/2606.11390v1) | Matthew Cong, Francis Williams, Jonathan Swartz, Mark Harris, Sanja Fidler, Ken Museth | [view](#paper-97) |
@@ -515,5 +515,5 @@ Virtual production (VP) use LED walls to provide both background imagery and ima
 A converged 3D Gaussian Splatting (3DGS) model may approximate the target scene while remaining poorly parameterized for further optimization. We identify this failure mode as \emph{parameterization degeneration}: high-opacity floaters attenuate gradients to true surfaces through alpha compositing, and redundant overlapping clusters create strongly coupled parameter blocks with nearly collinear Jacobian responses. These effects explain why continued optimization can plateau even when the model still contains removable artifacts. We propose ReorgGS, an equivalent distribution reorganization method for converged 3DGS models. ReorgGS treats the existing Gaussian set as an empirical probability field, resamples centers from it, estimates local anisotropic covariances with kNN, initializes low opacity, and continues optimization with the original 3DGS renderer and loss. Unlike opacity reset, which only rescales opacity on the old overlap graph, ReorgGS rebuilds centers, covariances, and visibility structure, thereby changing the graph itself. Our analysis shows that distributional equivalence is not optimization equivalence. The reorganized model preserves scene support while improving gradient accessibility under alpha compositing and reducing opacity-weighted overlap, thereby weakening local parameter coupling during subsequent optimization. Under the same additional optimization budget, ReorgGS improves fitting quality at a fixed Gaussian count, suppresses persistent floaters, and reduces rendering overhead from redundant overlap.
 
 
-_Last updated: 2026-06-11 17:05 (KST)_
+_Last updated: 2026-06-12 16:24 (KST)_
 <!-- PAPERS-END -->
