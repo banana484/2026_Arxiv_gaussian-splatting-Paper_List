@@ -11,7 +11,7 @@
 
 | Id | Date | Title | Authors | Abstract |
 |----|------|-------|---------|----------|
-| 100 | 2026-08-11 | [CausalSplat: Towards Comprehensive Hierarchical Reasoning in 3D Gaussian<br>Splatting](https://arxiv.org/abs/2608.11150v1) | Jiayu Ding, Meilu Song, Yun Chen, Wei Gao, Ge Li | [view](#paper-100) |
+| 100 | 2026-08-11 | [CausalSplat: Towards Comprehensive Hierarchical Reasoning in 3D Gaussian<br>Splatting](https://arxiv.org/abs/2608.11150v2) | Jiayu Ding, Meilu Song, Yun Chen, Wei Gao, Ge Li | [view](#paper-100) |
 | 99 | 2026-08-11 | [WildFireGS: Physics-Based Wildfire Simulation in Large-Scale Semantics-Enriched<br>Gaussian Splatting Forest Scenes](https://arxiv.org/abs/2608.11100v1) | Nienke Driessen, Joris Rijsdijk, Sören Pirk, Wojtek Palubicki, Dominik L. Michels, Michael Weinmann | [view](#paper-99) |
 | 98 | 2026-08-11 | [GS-CPE: Unified 6-Degree-of-Freedom Camera Pose Estimation via 3D Gaussian<br>Splatting](https://arxiv.org/abs/2608.10938v1) | Huaiyuan Weng, Chul Min Yeum, Su-Min Kang | [view](#paper-98) |
 | 97 | 2026-08-11 | [Embodied Multimodal Grounding for Open-Vocabulary Mobile Manipulation via<br>Semantic 3D Gaussian Splatting](https://arxiv.org/abs/2608.10756v1) | Huosen Ou, Dongni Song, Yuncong Wang, Tao Zhou, Yiding Ji | [view](#paper-97) |
@@ -515,5 +515,5 @@ Existing 3D Gaussian Splatting (3DGS) systems distribute representation capacity
 Recent advances in deep learning have notably improved steganographic message hiding. However, designing a generalizable steganographic approach for 3D Gaussian Splatting (3DGS) that can embed meaningful 3D scene content remains challenging. In this paper, we propose IBRSteG, a generalizable framework for 3DGS steganography that enables undetectable concealment of secret scenes within a steganographic scene. Unlike existing approaches whose parameter generation is rigidly coupled with the specific scene, we formulate 3D steganography as a feed-forward 3D Gaussian embedding process that generalizes across different 3DGS scenes. To realize this, we introduce GAS (Gaussian Attributes Steganographer), a network that learns a scene-independent embedding function by injecting the attributes of secret 3D Gaussian points into a cover scene, thereby directly reconstructing the steganographic scenes without per-scene finetuning or optimization. By transforming 3D Gaussian into these structured attributes, these attributes are compatible with 2D learning paradigms and benefit from their structured nature, thereby enhancing generalization to unseen 3DGS scenes. Extensive experiments on established datasets demonstrate that IBRSteG can effectively conceal different scenes with high visual quality, and achieves superior capacity and security. Code is available at https://github.com/LingXiang2023/IBRSteG.
 
 
-_Last updated: 2026-08-12 13:47 (KST)_
+_Last updated: 2026-08-13 13:51 (KST)_
 <!-- PAPERS-END -->
