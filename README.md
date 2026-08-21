@@ -13,7 +13,7 @@
 |----|------|-------|---------|----------|
 | 100 | 2026-08-19 | [GS-VLA: Plug-and-Play Viewpoint Canonicalization for Frozen VLA Policies via<br>Gaussian Splatting](https://arxiv.org/abs/2608.19066v1) | Yechan Park, HyunJin Kim | [view](#paper-100) |
 | 99 | 2026-08-19 | [CoMVS-GS: Collaborative Multi-View Stereo and 3D Gaussian Splatting for Surface<br>Reconstruction](https://arxiv.org/abs/2608.18413v1) | Shihan Chen, Junjing Zhang, Qingsong Yan, Haibing Liu, Haofan Ren, Fei Deng | [view](#paper-99) |
-| 98 | 2026-08-18 | [Depth Anything V4: Dynamic 4D Scene Reconstruction via Riemannian Flow Matching<br>on 4D Gaussian Splatting](https://arxiv.org/abs/2608.18388v1) | Jiaming Fan, Jian Lu, Jinling Jia, Chenbin Zhang | [view](#paper-98) |
+| 98 | 2026-08-18 | [Depth Anything V4: Dynamic 4D Scene Reconstruction via Riemannian Flow Matching<br>on 4D Gaussian Splatting](https://arxiv.org/abs/2608.18388v2) | Jiaming Fan, Jian Lu, Jinling Jia, Chenbin Zhang | [view](#paper-98) |
 | 97 | 2026-08-18 | [QuARC-GS: Quantized Anchored Residual Coding for Compact Dynamic Scene<br>Streaming with Gaussian Splatting](https://arxiv.org/abs/2608.18285v1) | Vu Trung Nghia Nguyen, Yuchen Wang, Kyung Chul Lee, Kevin C. Zhou | [view](#paper-97) |
 | 96 | 2026-08-18 | [GroupForward: Building Referable 3D Scenes via Instance-Grouped Feed-Forward<br>Gaussian Splatting](https://arxiv.org/abs/2608.17535v1) | Qijian Tian, Zimeng Wu, Xuhong Wang, Lizhuang Ma, Xin Tan | [view](#paper-96) |
 | 95 | 2026-08-18 | [NGS-Marker: Robust Native Watermarking for 3D Gaussian<br>Splatting](https://arxiv.org/abs/2608.17447v1) | Hao Qin, Yukai Sun, Luyuan Chen, Mengxu Lu, Feng Zhang, Ming Kong, Zhenhong Du, Qiang Zhu | [view](#paper-95) |
@@ -515,5 +515,5 @@ Challenges remain in ego-centric 3D scene generation due to limited view overlap
 This paper introduces a fast method for high-quality 3D Gaussian Splatting (3DGS) reconstruction without traditional Structure-from-Motion (SfM). The proposed approach leverages 3D Foundation Models (3DFMs) for camera pose and point-cloud initialization, then jointly optimizes both camera poses and Gaussian primitives using a depth-guided loss function. This enables fast convergence even from rough initialization with as few as 50-60 input views. To further improve reconstruction quality in sparse-view scenarios, an MLP-based pose refinement module is introduced alongside depth-guided supervision from the foundation model. Extensive experiments on Mip-NeRF 360, Tanks and Temples, and RobustNeRF demonstrate that the proposed method achieves competitive reconstruction quality (23.61 dB PSNR, 0.19 LPIPS) while reducing training time to approximately three minutes per scene. The proposed method produces ready-to-use 3DGS models at a fraction of the time required by existing pipelines, making it suitable for near real-time applications in robotics, VR, and autonomous navigation.
 
 
-_Last updated: 2026-08-20 12:47 (KST)_
+_Last updated: 2026-08-21 12:50 (KST)_
 <!-- PAPERS-END -->
