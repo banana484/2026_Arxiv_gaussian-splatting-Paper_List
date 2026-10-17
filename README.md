@@ -515,5 +515,5 @@ In novel view synthesis and Computed Tomography (CT) reconstruction with sparse-
 Recent advances in Gaussian Splatting (GS) compression have enabled substantial reductions in GS model size. Reliable objective quality assessment is therefore essential for comparing compression methods and guiding the development of more efficient GS codecs. Existing GS quality assessment typically relies on image and video quality metrics, requiring rendering of predefined viewpoints and making the quality estimate dependent on the selected views. This paper introduces GS-PQM, a novel full-reference quality metric for post-training GS compression that operates directly in the GS parameter domain. GS-PQM estimates perceptual quality from a set of parameter-domain distortion errors using a Support Vector Regression model. Experimental results show that GS-PQM outperforms 25 existing image, video, and point-cloud quality metrics in assessing compressed GS content, providing an accurate and computationally efficient alternative to rendering-based quality assessment.
 
 
-_Last updated: 2026-10-16 16:57 (KST)_
+_Last updated: 2026-10-17 16:34 (KST)_
 <!-- PAPERS-END -->
